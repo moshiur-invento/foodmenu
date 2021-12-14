@@ -49,6 +49,11 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
+@font-face {
+  font-family: abraham;
+  src: url(../fonts/Proxima\ Nova\ Font.otf);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -71,10 +76,12 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
+  font-family: "abraham";
 
 p {
   margin-top: 0;
   margin-bottom: 1rem; }
+  font-family: "abraham";
 
 abbr[title],
 abbr[data-original-title] {
@@ -8133,7 +8140,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "abraham", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.8;
   font-weight: normal;
@@ -8155,7 +8162,7 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "abraham", Arial, sans-serif;
   color: #000; }
 
 .bg-primary {
@@ -8287,16 +8294,20 @@ h1, h2, h3, h4, h5,
 
 .navbar-brand {
   color: #000;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  font-family: 'abraham';
+    letter-spacing: 1px;
+
+}
   .navbar-brand span {
     display: block;
     font-size: 12px;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.3); }
+    color: rgb(0 0 0 / 59%); }
   .navbar-brand:hover, .navbar-brand:focus {
     color: #000; }
 
@@ -8383,8 +8394,22 @@ h1, h2, h3, h4, h5,
   padding-bottom: 1rem;
   font-weight: 600;
 }
-.card-block{
+.card-block {
   padding: 17px;
+  background-color: #f2f2f24d;
+  border-top: 0px dashed #e6e6e6;
+  border-left: 1.5px dashed #e6e6e6;
+  border-right: 1.5px dashed #e6e6e6;
+  border-bottom: 1.5px dashed #e6e6e6;
+
+
+
+}
+.card-block:hover {
+  padding: 17px;
+  background-color: #f2f2f24d;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  
 }
 .list-group-item {
   position: relative;
@@ -8397,7 +8422,7 @@ h1, h2, h3, h4, h5,
 .card-title {
   margin-bottom: 0.75rem;
   text-align: center;
-  border-bottom: 1px solid #e6e6e6;
+  border: 1.5px dashed #e6e6e6;
 }
 .card {
   position: relative;
@@ -8414,8 +8439,7 @@ h1, h2, h3, h4, h5,
   background-clip: border-box;
   border: 0px solid rgba(0, 0, 0, 0.125);
   border-radius: 15px;
-  background-image: url(file:///C:/Users/Invento/Downloads/food%20menu/website-menu-17/website-menu-17/images/bg1.jpg);
-  background-size: cover;
+
 }
 .card:hover {
   position: relative;
@@ -8430,13 +8454,12 @@ h1, h2, h3, h4, h5,
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 0px solid rgba(0, 0, 0, 0.125);
-  border-radius: 15px;
-  box-shadow: 3px 3px 5px -1px #80aaaa;
+
+
 }
 .badge-primary {
   color: #fff;
-  background-color: #525252 !important;
+  background-color: #F44336 !important;
 }
 .food-round {
   width: 60px;
@@ -8453,6 +8476,134 @@ h1, h2, h3, h4, h5,
   display: block;
   padding: 0.25rem 0.45rem;
   margin-bottom: -1px;
-  background-color: #ddddddb8;
-  border: 0px solid rgb(0 0 0 / 3%);
+  background-color: transparent;
+  border: 1.5px dashed #e6e6e6;
+  font-family: 'abraham';
+    font-size: 16px;
+    color: #000;
+}
+.btn {
+border: 1.5px dashed #e6e6e6;
+}
+
+/* Food full menu  */
+.wrap-list-foodMenu {
+  padding-top: 0px;
+  padding-bottom: 0px; 
+}
+ 
+.list-foodMenu>div {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.item-foodMenu {}
+.img-list-foodMenu {
+  text-align: center;
+}
+.item-foodMenu {
+  border: 1.5px dashed #e6e6e6;
+  margin: 10px;
+}
+.img-list-foodMenu img {
+  width: 70px;
+  border-radius: 20%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-top: 4px;
+}
+.img-list-foodMenu img:hover {
+  transform: translate(0,-4px);
+  box-shadow: 3px 4px 10px -5px #505050;
+  -moz-box-shadow: 3px 4px 10px -5px #505050;
+    -webkit-box-shadow: 3px 4px 10px -5px #505050;
+    -o-box-shadow: 3px 4px 10px -5px #505050;
+    -ms-box-shadow: 3px 4px 10px -5px #505050;
+}
+.name-foodMenu,.name-foodMenu>a {
+  padding-top: 8px;
+  font-family: 'abraham', sans-serif;
+  font-size: 21px;
+  color: #333333; font-weight: 500;
+  text-transform: capitalize;
+}
+.hover-link-color:hover{
+  text-decoration: none;
+  color: #e52233;
+}
+.line-foodMenu{
+  border-bottom: 1px solid #c9c9c9;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 5px;
+  min-width: 0px;
+  padding: 0px;
+}
+.price-foodMenu {
+  padding-top: 8px;
+  font-family: 'abraham', sans-serif;
+  font-size: 20px;
+  color: #f44336; font-weight: 600;
+}
+.info-foodMenu {
+  padding-bottom: 8px;
+  font-family: "abraham";
+  font-size: 14px;
+  color: #666666;
+}
+@media (max-width: 995px){
+  .img-list-foodMenu>a>img{float: right !important;}
+  .img-list-foodMenu, .text-list-foodMenu {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+}
+@media (max-width: 576px){
+  .img-list-foodMenu > a > img {float: unset !important;}
+  .img-list-foodMenu, .text-list-foodMenu, .price-foodMenu {
+    text-align: center !important;
+  }
+  
+  .item-foodMenu {border-bottom: 1px solid #e4e4e4;}
+  .line-foodMenu {display: none;}
+  .social-media {
+    margin-bottom: -15px !important;
+    padding-bottom: 10px !important;
+}
+.mob{
+  
+  padding-top: 25px !important;
+  margin-bottom: 10px !important;
+
+}
+  
+}
+.form-check-label {
+  margin-bottom: 0;
+  font-family: 'abraham';
+}
+.text-muted {
+  color: #6c757d !important;
+  font-family: 'abraham';
+}
+.scrollmenu a:link {
+  color: red;
+}
+
+/* visited link */
+.scrollmenu a:visited {
+  color: green;
+}
+
+/* mouse over link */
+.scrollmenu a:hover {
+  color: black;
+}
+
+/* selected link */
+.scrollmenu a:active {
+  color: blue;
+  border: 1px solid yellow;
 }
