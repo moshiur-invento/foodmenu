@@ -359,7 +359,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  border-top: 1px dashed #cdc6c6; }
 
 small,
 .small {
@@ -374,6 +374,12 @@ mark,
 .list-unstyled {
   padding-left: 0;
   list-style: none; }
+
+  .font-weight-bold {
+    font-weight: 700 !important;
+    font-family: 'abraham';
+    letter-spacing: 1px;
+}
 
 .list-inline {
   padding-left: 0;
